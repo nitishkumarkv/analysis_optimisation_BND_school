@@ -17,12 +17,13 @@ source .venv/bin/activate
 
 python -m pip install --upgrade pip
 pip install -e ".[dev]"
+cd ..
 ```
 
 ## Option 2 — Micromamba environment
 
 ```bash
-micromamba create -n gato python=3.11 -y
+micromamba create -n gato python=3.10 -y
 micromamba activate gato
 
 git clone https://github.com/FloMau/gato-hep.git
@@ -30,6 +31,7 @@ cd gato-hep
 
 python -m pip install --upgrade pip
 pip install -e ".[dev]"
+cd ..
 ```
 
 The `-e` option installs `gato-hep` in **editable mode**, so changes made to the local source code are immediately available without reinstalling the package.
