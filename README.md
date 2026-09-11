@@ -1,6 +1,6 @@
 # Analysis optimisation
 
-This repository contains the starter material for the **Analysis Optimisation** ([Indico link](https://indico.global/event/17239/timetable/#20260909)) project of the BND Graduate School 2026.
+This repository contains the starter material for the **Analysis Optimisation** ([Indico link](https://indico.global/event/17239/contributions/164027/)) project of the BND Graduate School 2026.
 
 # Installing `gato-hep` in Editable Mode
 
