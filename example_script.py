@@ -161,8 +161,7 @@ def plot_input_scores(
             signal_labels=[f"{SIGNAL_LABEL} x100"],
             output_filename=str(output_dir / f"score_dim{dim}.pdf"),
             axis_labels=(f"Softmax dimension {dim}", "Events"),
-            log=False,
-            equidistant_bins=False,
+            log=True,
         )
 
 
@@ -323,8 +322,7 @@ def run_gato(
             ),
             axis_labels=("GATO category", "Events"),
             normalize=False,
-            log=False,
-            equidistant_bins=False,
+            log=True,
         )
 
         plot_learned_gaussians(
@@ -372,7 +370,7 @@ def parse_args() -> argparse.Namespace:
         "--gato-bins",
         nargs="+",
         type=int,
-        default=[3],
+        default=[3, 10],
     )
 
     parser.add_argument("--epochs", type=int, default=500)
